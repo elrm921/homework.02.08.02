@@ -6,8 +6,8 @@
 
 template<typename T>
 void print_container(T container) {
-    auto first = container.begin();
-    auto last = container.end();
+    auto first = container.cbegin();
+    auto last = container.cend();
     while (first != last) {
         std::cout << *(first++) << " ";
     }
